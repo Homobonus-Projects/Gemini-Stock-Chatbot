@@ -1,0 +1,7 @@
+fastapi
+uvicorn
+python-multipart
+Pillow
+google-genai
+mcp
+aiohttp

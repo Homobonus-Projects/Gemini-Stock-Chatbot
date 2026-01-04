@@ -1,0 +1,71 @@
+:root {
+  /* Light Theme */
+  --background-color: #f0f2f5;
+  --text-color: #333;
+  --text-color-secondary: #666;
+  --primary-color: #4CAF50; /* Green */
+  --primary-color-dark: #45a049;
+  --secondary-color: #2196F3; /* Blue */
+  --secondary-color-dark: #1976D2;
+  --header-bg: #ffffff;
+  --border-color: #e0e0e0;
+  --shadow-color: rgba(0, 0, 0, 0.1);
+  --input-bg: #ffffff;
+  --input-border: #ccc;
+  --input-field-bg: #ffffff;
+  --input-field-text: #333;
+  --user-message-bg: #DCF8C6; /* Light green */
+  --user-message-text: #333;
+  --bot-message-bg: #EAEAEA; /* Light grey */
+  --bot-message-text: #333;
+  --disabled-color: #cccccc;
+}
+
+[data-theme='dark'] {
+  /* Dark Theme */
+  --background-color: #282c34;
+  --text-color: #f0f0f0;
+  --text-color-secondary: #aaa;
+  --primary-color: #4CAF50; /* Green */
+  --primary-color-dark: #45a049;
+  --secondary-color: #2196F3; /* Blue */
+  --secondary-color-dark: #1976D2;
+  --header-bg: #21252b;
+  --border-color: #3a3f47;
+  --shadow-color: rgba(0, 0, 0, 0.3);
+  --input-bg: #21252b;
+  --input-border: #555;
+  --input-field-bg: #3a3f47;
+  --input-field-text: #f0f0f0;
+  --user-message-bg: #075E54; /* Darker green */
+  --user-message-text: #f0f0f0;
+  --bot-message-bg: #414750; /* Darker grey */
+  --bot-message-text: #f0f0f0;
+  --disabled-color: #555555;
+}
+
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: var(--background-color);
+  transition: background-color 0.3s ease;
+}

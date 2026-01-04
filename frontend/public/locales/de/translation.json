@@ -1,0 +1,18 @@
+{
+  "title": "Gemini Aktien-Chatbot",
+  "lightMode": "☀️ Heller Modus",
+  "darkMode": "🌙 Dunkler Modus",
+  "enterApiKey": "Geben Sie den Gemini-API-Schlüssel ein",
+  "yourApiKey": "Ihr Gemini-API-Schlüssel",
+  "saveKey": "Schlüssel speichern",
+  "apiKeyStored": "Ihr API-Schlüssel wird lokal in Ihrem Browser gespeichert.",
+  "welcomeMessage": "Willkommen beim Gemini Aktien-Chatbot!",
+  "welcomeInstruction": "Laden Sie ein Aktiendiagramm hoch oder fügen Sie es ein und bitten Sie um eine Analyse.",
+  "enterApiKeyButton": "Geben Sie Ihren Gemini-API-Schlüssel ein",
+  "uploadedChartAlt": "Hochgeladenes Diagramm",
+  "pastedPreviewAlt": "Eingefügte Vorschau",
+  "inputPlaceholder": "Fragen Sie nach dem Aktiendiagramm oder fügen Sie ein Bild ein...",
+  "fileUpload": "📁",
+  "removeImage": "×",
+  "thinking": "Denken..."
+}

@@ -1,0 +1,18 @@
+{
+  "title": "Gemini Stock Chatbot",
+  "lightMode": "☀️ Light Mode",
+  "darkMode": "🌙 Dark Mode",
+  "enterApiKey": "Enter Gemini API Key",
+  "yourApiKey": "Your Gemini API Key",
+  "saveKey": "Save Key",
+  "apiKeyStored": "Your API key is stored locally in your browser.",
+  "welcomeMessage": "Welcome to Gemini Stock Chatbot!",
+  "welcomeInstruction": "Upload a stock chart, or paste it, and ask for analysis.",
+  "enterApiKeyButton": "Enter Your Gemini API Key",
+  "uploadedChartAlt": "Uploaded chart",
+  "pastedPreviewAlt": "Pasted preview",
+  "inputPlaceholder": "Ask about the stock chart, or paste an image...",
+  "fileUpload": "📁",
+  "removeImage": "×",
+  "thinking": "Thinking..."
+}

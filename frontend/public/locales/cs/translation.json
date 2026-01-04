@@ -1,0 +1,18 @@
+{
+  "title": "Gemini Akciový Chatbot",
+  "lightMode": "☀️ Světlý režim",
+  "darkMode": "🌙 Tmavý režim",
+  "enterApiKey": "Zadejte klíč API Gemini",
+  "yourApiKey": "Váš klíč API Gemini",
+  "saveKey": "Uložit klíč",
+  "apiKeyStored": "Váš klíč API je uložen lokálně ve vašem prohlížeči.",
+  "welcomeMessage": "Vítejte v Gemini Akciovém Chatbotu!",
+  "welcomeInstruction": "Nahrajte akciový graf, nebo ho vložte, a požádejte o analýzu.",
+  "enterApiKeyButton": "Zadejte svůj klíč API Gemini",
+  "uploadedChartAlt": "Nahraný graf",
+  "pastedPreviewAlt": "Vložený náhled",
+  "inputPlaceholder": "Zeptejte se na akciový graf nebo vložte obrázek...",
+  "fileUpload": "📁",
+  "removeImage": "×",
+  "thinking": "Přemýšlím..."
+}

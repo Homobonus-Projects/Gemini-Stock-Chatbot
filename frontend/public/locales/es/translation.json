@@ -1,0 +1,18 @@
+{
+  "title": "Chatbot de Acciones de Gemini",
+  "lightMode": "☀️ Modo Claro",
+  "darkMode": "🌙 Modo Oscuro",
+  "enterApiKey": "Ingrese la clave de API de Gemini",
+  "yourApiKey": "Tu clave de API de Gemini",
+  "saveKey": "Guardar clave",
+  "apiKeyStored": "Tu clave de API se almacena localmente en tu navegador.",
+  "welcomeMessage": "¡Bienvenido al Chatbot de Acciones de Gemini!",
+  "welcomeInstruction": "Sube un gráfico de acciones, o pégalo, y solicita un análisis.",
+  "enterApiKeyButton": "Ingresa tu clave de API de Gemini",
+  "uploadedChartAlt": "Gráfico subido",
+  "pastedPreviewAlt": "Vista previa pegada",
+  "inputPlaceholder": "Pregunta sobre el gráfico de acciones o pega una imagen...",
+  "fileUpload": "📁",
+  "removeImage": "×",
+  "thinking": "Pensando..."
+}
