@@ -1,10 +1,10 @@
  # 🤖 Gemini Stock Chatbot 📈
 
-Witaj w Gemini Stock Chatbot! Ta aplikacja SPA (Single Page Application) pozwala na analizę wykresów giełdowych za pomocą sztucznej inteligencji Google Gemini. Po prostu prześlij zdjęcie wykresu, a nasz bot dostarczy Ci informacji o trendach i poradzi, czy warto inwestować!
+Witaj w Gemini Stock Chatbot! Ta aplikacja SPA (Single Page Application) pozwala na analizę wykresów giełdowych za pomocą sztucznej inteligencji Google Gemini. Po prostu prześlij zdjęcie wykresu, albo zapytaj o dany ticker, a nasz bot dostarczy Ci informacji o trendach i poradzi, czy warto inwestować!
 
 ## ✨ Funkcje
 
-*   **Analiza Wykresów Giełdowych:** Prześlij zdjęcie wykresu, a Gemini Pro Vision AI zajmie się resztą.
+*   **Analiza Wykresów Giełdowych:** Prześlij zdjęcie wykresu, a Gemini Pro zajmie się resztą.
 *   **Porady Inwestycyjne:** Otrzymuj informacje o trendach, poziomach wsparcia/oporu oraz rekomendacje (kupuj/sprzedawaj/trzymaj).
 *   **Czat Intuicyjny:** Łatwy w użyciu interfejs czatu do interakcji z botem.
 *   **Tryb Jasny/Ciemny:** Nowoczesne stylowanie z możliwością przełączania trybu wyświetlania.
