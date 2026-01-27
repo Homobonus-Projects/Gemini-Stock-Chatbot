@@ -82,3 +82,9 @@ Aplikacja posiada nowoczesne stylowanie z możliwością przełączania trybu ja
 ---
 
 Ciesz się korzystaniem z Gemini Stock Chatbot! Wszelkie uwagi i propozycje ulepszeń są mile widziane. 😊
+
+
+##TODO
+- [ ] Zrobić powiększanie zdjęcia
+- [ ] Zrobić większe zdjęcia
+- [ ] Dodać lokalny model do 20b

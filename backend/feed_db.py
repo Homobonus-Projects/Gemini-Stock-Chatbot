@@ -1,10 +1,11 @@
 import requests
 import os
 import yfinance as yf
+from time import time, sleep
 
 # --- KONFIGURACJA ---
 BACKEND_URL = "http://localhost:8000/ingest"
-GEMINI_API_KEY = "AIzaSyAnS6RzoMd8TclFuEbpGF7xWO9j2rtFu3k"  # <-- WAŻNE: Podaj swój klucz
+GEMINI_API_KEY = "AIzaSyAev_ikX2Q3yK1_H0RyYaclRM69EeuiJrg"  # <-- WAŻNE: Podaj swój klucz
 TICKERS = {
     "AAPL": "Apple",
     "MSFT": "Microsoft",
@@ -85,6 +86,7 @@ def feed_from_yfinance(ticker_symbol):
         summary = content.get("summary", "")
         description = content.get("description", "")
         rag_text = f"{title}\n\n{summary}\n\n{description}".strip()
+        sleep(1)  # Unikaj limitów API
         send_to_rag(rag_text)
 
 
