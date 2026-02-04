@@ -29,6 +29,7 @@ function App() {
   const [isLoading, setIsLoading] = useState(false);
   const [showApiKeyInput, setShowApiKeyInput] = useState(!geminiApiKey);
   const [selectedModel, setSelectedModel] = useState(() => localStorage.getItem('selectedModel') || ALLOWED_MODELS[0]);
+  const [modalImage, setModalImage] = useState(null);
 
   const messagesEndRef = useRef(null);
 
@@ -178,8 +179,64 @@ function App() {
     i18n.changeLanguage(e.target.value);
   };
 
+  const openModal = (imageSrc) => {
+    setModalImage(imageSrc);
+  };
+
+  const closeModal = () => {
+    setModalImage(null);
+  };
+
   return (
     <div className="App">
+      <style>{`
+        .message-image {
+          max-width: 400px;
+          max-height: 400px;
+          cursor: pointer;
+          transition: transform 0.2s;
+        }
+        .message-image:hover {
+          transform: scale(1.02);
+        }
+        .image-modal {
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: rgba(0, 0, 0, 0.85);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          z-index: 2000;
+          backdrop-filter: blur(5px);
+        }
+        .image-modal-content {
+          position: relative;
+          max-width: 90%;
+          max-height: 90%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .image-modal-content img {
+          max-width: 100%;
+          max-height: 90vh;
+          border-radius: 8px;
+          box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        }
+        .close-modal {
+          position: absolute;
+          top: -40px;
+          right: 0;
+          color: white;
+          font-size: 35px;
+          font-weight: bold;
+          cursor: pointer;
+          z-index: 2001;
+        }
+      `}</style>
       <header className="app-header">
         <div className="app-title">
           <img src={logo} className="app-logo" alt="logo" />
@@ -245,7 +302,14 @@ function App() {
           )}
           {messages.map((msg, index) => (
             <div key={index} className={`message-bubble ${msg.type}`}>
-              {msg.image && <img src={msg.image} alt={t('uploadedChartAlt')} className="message-image" />}
+              {msg.image && (
+                <img
+                  src={msg.image}
+                  alt={t('uploadedChartAlt')}
+                  className="message-image"
+                  onClick={() => openModal(msg.image)}
+                />
+              )}
               {msg.type === 'user' ? (
                 msg.text && <p>{msg.text}</p>
               ) : ( /* 'bot' */
@@ -286,6 +350,15 @@ function App() {
           </div>
         </form>
       </main>
+
+      {modalImage && (
+        <div className="image-modal" onClick={closeModal}>
+          <div className="image-modal-content" onClick={(e) => e.stopPropagation()}>
+            <span className="close-modal" onClick={closeModal}>&times;</span>
+            <img src={modalImage} alt="Full size" />
+          </div>
+        </div>
+      )}
     </div>
   );
 }

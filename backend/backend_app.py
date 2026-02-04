@@ -179,7 +179,7 @@ async def chat_endpoint(
         img_data = await file.read()
         user_parts.append(types.Part.from_bytes(data=img_data, mime_type=file.content_type))
 
-    base_instruction = "Jesteś ekspertem finansowym. Używaj narzędzi do pobierania danych giełdowych. Przedstawiaj sugestie oraz przewidywania przyszłościowe dla kursów. Sugeruj co moze byc dobre do inwestowania."
+    base_instruction = "Jesteś ekspertem finansowym. KOrzystaj z swojej wiedzy. Używaj narzędzi do pobierania danych giełdowych. Przedstawiaj sugestie oraz przewidywania przyszłościowe dla kursów. Sugeruj co moze byc dobre do inwestowania. Odpowiadaj szczegółowo i rzeczowo. w punktach, jak profesjonalista, w ustrukturyzowany sposób."
     if rag_context:
         base_instruction += f"\n\nOto dodatkowe informacje z bazy wiedzy, które mogą być pomocne:\n{rag_context}\nUżyj ich, jeśli są relewantne do pytania."
 

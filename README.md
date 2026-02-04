@@ -85,6 +85,6 @@ Ciesz się korzystaniem z Gemini Stock Chatbot! Wszelkie uwagi i propozycje ulep
 
 
 ##TODO
-- [ ] Zrobić powiększanie zdjęcia
-- [ ] Zrobić większe zdjęcia
-- [ ] Dodać lokalny model do 20b
+- [x] Zrobić powiększanie zdjęcia
+- [x] Zrobić większe zdjęcia
+- [x] DO sprawozdania dodać daty spotkań
