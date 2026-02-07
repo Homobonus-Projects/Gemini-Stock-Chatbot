@@ -5,7 +5,7 @@ from time import time, sleep
 
 # --- KONFIGURACJA ---
 BACKEND_URL = "http://localhost:8000/ingest"
-GEMINI_API_KEY = "AIzaSyAev_ikX2Q3yK1_H0RyYaclRM69EeuiJrg"  # <-- WAŻNE: Podaj swój klucz
+GEMINI_API_KEY = ""  # <-- WAŻNE: Podaj swój klucz
 TICKERS = {
     "AAPL": "Apple",
     "MSFT": "Microsoft",
